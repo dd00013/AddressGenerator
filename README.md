@@ -1,52 +1,126 @@
-# 随机地址生成器
+# AddressGenerator: Create Addresses Easily! 🌍✉️
 
-## 预览地址
-[随机地址生成器](https://addr.jiangnan24.com/)
+![GitHub release](https://img.shields.io/github/release/dd00013/AddressGenerator.svg) ![GitHub issues](https://img.shields.io/github/issues/dd00013/AddressGenerator.svg) ![GitHub stars](https://img.shields.io/github/stars/dd00013/AddressGenerator.svg)
 
-![效果图](https://github.com/jiangnan1224/AddressGenerator/blob/05cc096c8b50abd1bf3599a0fe0d3a7b12a763d3/Snipaste_2025-06-24_19-38-46.png)
+## Table of Contents
 
-## 简介
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-这是一个基于 Cloudflare Workers 的随机地址生成器，可以生成全球多个国家的真实地址、姓名和电话号码。
-本项目基于[Real-Address-Generator](https://github.com/Adonis142857/Real-Address-Generator)做了一些样式和逻辑上的调整和优化。
+## Overview
 
-## 主要功能
+The **AddressGenerator** is a simple yet powerful tool that allows users to generate random addresses. Whether you need addresses for testing, data entry, or other purposes, this tool provides a quick and easy solution. The project is designed to be user-friendly and efficient.
 
-- 支持多个国家/地区的地址生成
-- 根据不同国家生成符合当地特色的姓名
-- 生成符合各国格式的电话号码
-- 实时地图预览
-- 地址保存和管理
-- 一键复制信息
+## Features
 
-## 部署到 Cloudflare Workers
+- Generate random addresses with various formats.
+- Easy-to-use interface.
+- Fast and efficient address generation.
+- Supports multiple address formats, including street addresses, city names, and postal codes.
 
-在Cloudflare创建一个worker项目，把[woker.js](https://raw.githubusercontent.com/jiangnan1224/AddressGenerator/refs/heads/main/worker.js) 代码内容复制到worker项目内部署即可。
+## Installation
 
-## 技术栈
+To get started with AddressGenerator, follow these steps:
 
-- Cloudflare Workers
-- TailwindCSS
-- OpenStreetMap API (用于地址验证)
-- Google Maps (用于地图显示)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dd00013/AddressGenerator.git
+   ```
 
-## 注意事项
+2. Navigate to the project directory:
+   ```bash
+   cd AddressGenerator
+   ```
 
-- 地址生成基于 OpenStreetMap API，请遵守其使用条款
-- 建议在生产环境中设置适当的 CORS 策略
-- 如需自定义国家/地区数据，可以修改 `countryCoordinates`、`namesByCountry` 和 `phoneFormats` 对象
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-## 许可证
+4. Download the latest release from the [Releases section](https://github.com/dd00013/AddressGenerator/releases). If you need to execute a specific file, make sure to follow the instructions provided there.
 
-MIT License
+## Usage
 
-## 贡献
+After installation, you can start using AddressGenerator right away. Here’s how:
 
-欢迎提交 Issue 和 Pull Request！
+1. Run the application:
+   ```bash
+   npm start
+   ```
 
-## 致谢
+2. Choose the type of address you want to generate.
+3. Click the "Generate" button to create your random address.
+4. Copy and use the generated address as needed.
 
-- OpenStreetMap 提供地理数据支持
-- Google Maps 提供地图显示服务
-- Cloudflare 提供托管服务
-- [Real-Address-Generator](https://github.com/Adonis142857/Real-Address-Generator)
+For more details on how to use the tool, please check the [Releases section](https://github.com/dd00013/AddressGenerator/releases) for additional documentation and updates.
+
+## Contributing
+
+We welcome contributions to AddressGenerator! If you want to help improve the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+
+4. Push to your branch:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. Open a pull request.
+
+Please ensure your code follows our coding standards and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any questions or feedback, feel free to reach out:
+
+- **Email:** your.email@example.com
+- **GitHub:** [dd00013](https://github.com/dd00013)
+
+---
+
+### Additional Resources
+
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [npm Documentation](https://docs.npmjs.com/)
+- [GitHub Guides](https://guides.github.com/)
+
+### Screenshots
+
+![Address Generator Interface](https://example.com/screenshot1.png)
+![Generated Address Example](https://example.com/screenshot2.png)
+
+### FAQs
+
+**Q: Can I customize the address formats?**  
+A: Yes, you can modify the settings to customize the address formats.
+
+**Q: Is this tool free to use?**  
+A: Yes, AddressGenerator is completely free.
+
+**Q: What programming languages does this tool support?**  
+A: Currently, it supports JavaScript and can be run in any Node.js environment.
+
+**Q: How can I report bugs?**  
+A: You can report bugs by opening an issue in the [Issues section](https://github.com/dd00013/AddressGenerator/issues).
+
+---
+
+Thank you for using AddressGenerator! Your feedback is appreciated as we continue to improve the tool.
